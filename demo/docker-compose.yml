@@ -1,0 +1,14 @@
+version: '2.2'
+
+services:
+  db:
+    image: mysql
+    restart: always
+    container_name: bookstore-db
+    environment:
+      MYSQL_ROOT_PASSWORD: f0lksd3v
+      MYSQL_DATABASE: bookstore-db
+      MYSQL_USER: furkan
+      MYSQL_PASSWORD: f0lksd3v
+    ports:
+      - '3306:3306'
